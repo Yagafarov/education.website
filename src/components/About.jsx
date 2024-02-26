@@ -132,7 +132,7 @@ export default function About() {
                   '&:hover > svg': { transform: 'translateX(2px)' },
                 }}
               >
-                <span>Learn more</span>
+                <span>Batafsil</span>
                 <ChevronRightRoundedIcon
                   fontSize="small"
                   sx={{ mt: '1px', ml: '2px' }}

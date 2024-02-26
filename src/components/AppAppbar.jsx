@@ -154,8 +154,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                 variant="text"
                 size="small"
                 component="a"
-                href="/material-ui/getting-started/templates/sign-in/"
-                target="_blank"
+                href="/signin"
               >
                 Kirish
               </Button>
@@ -164,8 +163,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                 variant="contained"
                 size="small"
                 component="a"
-                href="/material-ui/getting-started/templates/sign-up/"
-                target="_blank"
+                href="/signup"
               >
                 Ro'yxatdan o'tish
               </Button>
