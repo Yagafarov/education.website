@@ -30,9 +30,7 @@ export default function Home() {
     setMode((prev) => (prev === 'dark' ? 'light' : 'dark'));
   };
 
-  const toggleCustomTheme = () => {
-    setShowCustomTheme((prev) => !prev);
-  };
+
 
   return (
     <ThemeProvider theme={showCustomTheme ? LPtheme : defaultTheme}>
