@@ -223,7 +223,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                       color="primary"
                       variant="contained"
                       component="a"
-                      href="/signup"
+                      href="/signup/"
                       sx={{ width: '100%' }}
                     >
                       Ro'yxatdan o'tish
@@ -234,7 +234,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                       color="primary"
                       variant="outlined"
                       component="a"
-                      href="/signin"
+                      href="/signin/"
                       sx={{ width: '100%' }}
                     >
                       Kirish
