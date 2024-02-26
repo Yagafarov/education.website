@@ -21,7 +21,7 @@ function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" mt={1}>
       {'Copyright © '}
-      <Link href="https://mui.com/">Sitemark&nbsp;</Link>
+      <Link href="https://anodra.uz/">Anodra&nbsp;</Link>
       {new Date().getFullYear()}
     </Typography>
   );
@@ -66,10 +66,10 @@ export default function Footer() {
               />
             </Box>
             <Typography variant="body2" fontWeight={600} gutterBottom>
-              Newsletter
+              Biz haqimizda
             </Typography>
             <Typography variant="body2" color="text.secondary" mb={2}>
-              Subscribe to our newsletter for weekly updates and promotions.
+              Tizimdan to'laqonli foydalanish uchun ro'yxatdan o'tishingiz lozim
             </Typography>
             <Stack direction="row" spacing={1} useFlexGap>
               <TextField
@@ -79,14 +79,14 @@ export default function Footer() {
                 variant="outlined"
                 fullWidth
                 aria-label="Enter your email address"
-                placeholder="Your email address"
+                placeholder="Email"
                 inputProps={{
                   autocomplete: 'off',
                   ariaLabel: 'Enter your email address',
                 }}
               />
               <Button variant="contained" color="primary" sx={{ flexShrink: 0 }}>
-                Subscribe
+                Obuna bo'lish
               </Button>
             </Stack>
           </Box>
@@ -99,22 +99,22 @@ export default function Footer() {
           }}
         >
           <Typography variant="body2" fontWeight={600}>
-            Product
+            Menyu
           </Typography>
           <Link color="text.secondary" href="#">
-            Features
+            Afzalliklar
           </Link>
           <Link color="text.secondary" href="#">
-            Testimonials
+            Kurslar
           </Link>
           <Link color="text.secondary" href="#">
-            Highlights
+            Bloglar
           </Link>
           <Link color="text.secondary" href="#">
-            Pricing
+            O'qituvchilar
           </Link>
           <Link color="text.secondary" href="#">
-            FAQs
+            FAQ
           </Link>
         </Box>
         <Box
@@ -125,17 +125,15 @@ export default function Footer() {
           }}
         >
           <Typography variant="body2" fontWeight={600}>
-            Company
+            Kompaniya
           </Typography>
           <Link color="text.secondary" href="#">
-            About us
+            Biz haqimizda
           </Link>
           <Link color="text.secondary" href="#">
-            Careers
+          Karyera
           </Link>
-          <Link color="text.secondary" href="#">
-            Press
-          </Link>
+          
         </Box>
         <Box
           sx={{
@@ -145,16 +143,16 @@ export default function Footer() {
           }}
         >
           <Typography variant="body2" fontWeight={600}>
-            Legal
+          Huquqiy
           </Typography>
           <Link color="text.secondary" href="#">
-            Terms
+          Shartlar
           </Link>
           <Link color="text.secondary" href="#">
-            Privacy
+          Maxfiylik
           </Link>
           <Link color="text.secondary" href="#">
-            Contact
+            Aloqa
           </Link>
         </Box>
       </Box>
@@ -170,13 +168,13 @@ export default function Footer() {
       >
         <div>
           <Link color="text.secondary" href="#">
-            Privacy Policy
+          Maxfiylik siyosati
           </Link>
           <Typography display="inline" sx={{ mx: 0.5, opacity: 0.5 }}>
             &nbsp;•&nbsp;
           </Typography>
           <Link color="text.secondary" href="#">
-            Terms of Service
+          Xizmat ko'rsatish shartlari
           </Link>
           <Copyright />
         </div>
@@ -191,7 +189,7 @@ export default function Footer() {
         >
           <IconButton
             color="inherit"
-            href="https://github.com/mui"
+            href="https://github.com/yagafarov"
             aria-label="GitHub"
             sx={{ alignSelf: 'center' }}
           >
@@ -199,7 +197,7 @@ export default function Footer() {
           </IconButton>
           <IconButton
             color="inherit"
-            href="https://twitter.com/MaterialUI"
+            href="https://twitter.com/"
             aria-label="X"
             sx={{ alignSelf: 'center' }}
           >
@@ -207,7 +205,7 @@ export default function Footer() {
           </IconButton>
           <IconButton
             color="inherit"
-            href="https://www.linkedin.com/company/mui/"
+            href="https://www.linkedin.com/"
             aria-label="LinkedIn"
             sx={{ alignSelf: 'center' }}
           >

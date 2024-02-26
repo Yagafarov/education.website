@@ -10,35 +10,37 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import ChevronRightRoundedIcon from '@mui/icons-material/ChevronRightRounded';
 import DevicesRoundedIcon from '@mui/icons-material/DevicesRounded';
-import EdgesensorHighRoundedIcon from '@mui/icons-material/EdgesensorHighRounded';
-import ViewQuiltRoundedIcon from '@mui/icons-material/ViewQuiltRounded';
+import EdgesensorHighRoundedIcon from '@mui/icons-material/EdgesensorHighRounded';      
+import { Groups2,WorkOutline } from '@mui/icons-material';
 
 import aboutAnimation1 from '../assets/aboutAnimation1.json'
 import aboutAnimation2 from '../assets/aboutAnimation2.json'
+import aboutAnimation3 from '../assets/aboutAnimation3.json'
+import aboutAnimation4 from '../assets/aboutAnimation4.json'
 
 import Lottie from 'lottie-react';
 
 const items = [
   {
-    icon: <ViewQuiltRoundedIcon />,
-    title: 'Dashboard',
+    icon: <Groups2/>,
+    title: 'Jamoa',
     description:
-      'This item could provide a snapshot of the most important metrics or data points related to the product.',
-    imageUrl: aboutAnimation2,
+      "O'rganish uchun qulay jamoa muhiti ega ega bo'lishingiz mumkin bo'lgan",
+    imageUrl: aboutAnimation4,
   },
   {
     icon: <EdgesensorHighRoundedIcon />,
-    title: 'Mobile integration',
+    title: "O'rganish joy tanlamaydi",
     description:
-      'This item could provide information about the mobile app version of the product.',
-    imageUrl: aboutAnimation1,
+      'Istalgan muhitda, istalgan joyda zamonaviy kasblarni o`rganishingiz mumkin',
+    imageUrl: aboutAnimation3,
   },
   {
-    icon: <DevicesRoundedIcon />,
-    title: 'Available on all platforms',
+    icon: <WorkOutline />,
+    title: 'Ishonchli ish',
     description:
-      'This item could let users know the product is available on all platforms, such as web, mobile, and desktop.',
-    imageUrl: aboutAnimation1,
+      "Bizning kurslarni yakunlab eng zamonaviy kasblar egasi bo'ling",
+    imageUrl: aboutAnimation2,
   },
 ];
 
@@ -107,7 +109,10 @@ export default function About() {
                 minHeight: 280,
               }}
             >
-              sa
+              <Lottie animationData={
+                items[selectedItemIndex].imageUrl
+                    
+                    } />
             </Box>
             <Box sx={{ px: 2, pb: 2 }}>
               <Typography color="text.primary" variant="body2" fontWeight="bold">
@@ -220,7 +225,7 @@ export default function About() {
                         event.stopPropagation();
                       }}
                     >
-                      <span>Learn more</span>
+                      <span>Batafsil</span>
                       <ChevronRightRoundedIcon
                         fontSize="small"
                         sx={{ mt: '1px', ml: '2px' }}
@@ -254,6 +259,8 @@ export default function About() {
                 height: 500,
               }}
               display={'flex'}
+              alignItems={'center'}
+              justifyContent={'center'}
             >
               <Lottie animationData={
                 items[selectedItemIndex].imageUrl

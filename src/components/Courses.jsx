@@ -8,68 +8,81 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import { useTheme } from '@mui/system';
+import { Button, CardMedia, Link } from '@mui/material';
 
-const userTestimonials = [
+const courseData = [
   {
-    avatar: <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />,
-    name: 'Remy Sharp',
+    id: 1,
+    avatar: <Avatar alt="Aliyev Ali" src="https://variety.com/wp-content/uploads/2021/04/Avatar.jpg" />,
+    name: 'Aliyev Ali',
+    title: "Data Science",
     occupation: 'Senior Engineer',
     testimonial:
       "I absolutely love how versatile this product is! Whether I'm tackling work projects or indulging in my favorite hobbies, it seamlessly adapts to my changing needs. Its intuitive design has truly enhanced my daily routine, making tasks more efficient and enjoyable.",
   },
   {
-    avatar: <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />,
-    name: 'Travis Howard',
+    id: 2,
+    avatar: <Avatar alt="Aliyev Ali" src="https://variety.com/wp-content/uploads/2021/04/Avatar.jpg" />,
+    name: 'Aliyev Ali',
+    title: "Zamonaviy python",
     occupation: 'Lead Product Designer',
     testimonial:
       "One of the standout features of this product is the exceptional customer support. In my experience, the team behind this product has been quick to respond and incredibly helpful. It's reassuring to know that they stand firmly behind their product.",
   },
   {
-    avatar: <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />,
-    name: 'Cindy Baker',
+    id: 3,
+    avatar: <Avatar alt="Aliyev Ali" src="https://variety.com/wp-content/uploads/2021/04/Avatar.jpg" />,
+    name: 'Aliyev Ali',
+    title: "Python asoslari",
     occupation: 'CTO',
     testimonial:
       'The level of simplicity and user-friendliness in this product has significantly simplified my life. I appreciate the creators for delivering a solution that not only meets but exceeds user expectations.',
   },
   {
-    avatar: <Avatar alt="Remy Sharp" src="/static/images/avatar/4.jpg" />,
+    id: 4,
+    avatar: <Avatar alt="Aliyev Ali" src="https://variety.com/wp-content/uploads/2021/04/Avatar.jpg" />,
     name: 'Julia Stewart',
+    title: "Sun'iy intellekt",
     occupation: 'Senior Engineer',
     testimonial:
       "I appreciate the attention to detail in the design of this product. The small touches make a big difference, and it's evident that the creators focused on delivering a premium experience.",
   },
   {
-    avatar: <Avatar alt="Travis Howard" src="/static/images/avatar/5.jpg" />,
+    id: 5,
+    avatar: <Avatar alt="Aliyev Ali" src="https://variety.com/wp-content/uploads/2021/04/Avatar.jpg" />,
     name: 'John Smith',
-    occupation: 'Product Designer',
+    title: "Backend kursi",
+    occupation: 'Backend dasturchi',
     testimonial:
       "I've tried other similar products, but this one stands out for its innovative features. It's clear that the makers put a lot of thought into creating a solution that truly addresses user needs.",
   },
   {
-    avatar: <Avatar alt="Cindy Baker" src="/static/images/avatar/6.jpg" />,
-    name: 'Daniel Wolf',
-    occupation: 'CDO',
+    id: 6,
+    avatar: <Avatar alt="Aliyev Ali" src="" />,
+    name: 'Aliyev Ali',
+    title: "SEO kursi",
+    occupation: 'Programmer',
     testimonial:
       "The quality of this product exceeded my expectations. It's durable, well-designed, and built to last. Definitely worth the investment!",
   },
 ];
 
 const whiteLogos = [
-  'https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/6560628e8573c43893fe0ace_Sydney-white.svg',
-  'https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/655f4d520d0517ae8e8ddf13_Bern-white.svg',
-  'https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/655f46794c159024c1af6d44_Montreal-white.svg',
-  'https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/61f12e891fa22f89efd7477a_TerraLight.svg',
-  'https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/6560a09d1f6337b1dfed14ab_colorado-white.svg',
-  'https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/655f5caa77bf7d69fb78792e_Ankara-white.svg',
+  'https://d1csarkz8obe9u.cloudfront.net/posterpreviews/online-course-template-banner-for-facebook-design-9a58359ebb1f36cbf294432d077af73c_screen.jpg?ts=1586796101',
+  'https://trisectinstitute.com/wp-content/uploads/2021/12/best-python-training.png',
+  'https://i.ytimg.com/vi/rfscVS0vtbw/maxresdefault.jpg',
+  'https://www.elegantthemes.com/blog/wp-content/uploads/2023/12/best-ai-courses-featured-img.jpg',
+  'https://assets-global.website-files.com/613baa7ad4f394142e65cb73/6192df82a3ed61da2f44f38a_opengraph-06.jpg',
+  'https://venngage-wordpress.s3.amazonaws.com/uploads/2021/05/Create-Online-Course-Blog-Header.png',
 ];
 
 const darkLogos = [
-  'https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/6560628889c3bdf1129952dc_Sydney-black.svg',
-  'https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/655f4d4d8b829a89976a419c_Bern-black.svg',
-  'https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/655f467502f091ccb929529d_Montreal-black.svg',
-  'https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/61f12e911fa22f2203d7514c_TerraDark.svg',
-  'https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/6560a0990f3717787fd49245_colorado-black.svg',
-  'https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/655f5ca4e548b0deb1041c33_Ankara-black.svg',
+  'https://d1csarkz8obe9u.cloudfront.net/posterpreviews/online-course-template-banner-for-facebook-design-9a58359ebb1f36cbf294432d077af73c_screen.jpg?ts=1586796101',
+  'https://trisectinstitute.com/wp-content/uploads/2021/12/best-python-training.png',
+  'https://i.ytimg.com/vi/rfscVS0vtbw/maxresdefault.jpg',
+  'https://www.elegantthemes.com/blog/wp-content/uploads/2023/12/best-ai-courses-featured-img.jpg',
+  'https://assets-global.website-files.com/613baa7ad4f394142e65cb73/6192df82a3ed61da2f44f38a_opengraph-06.jpg',
+  'https://venngage-wordpress.s3.amazonaws.com/uploads/2021/05/Create-Online-Course-Blog-Header.png',
 ];
 
 const logoStyle = {
@@ -101,53 +114,61 @@ export default function Courses() {
         }}
       >
         <Typography component="h2" variant="h4" color="text.primary">
-          Testimonials
+          Kurslar
         </Typography>
         <Typography variant="body1" color="text.secondary">
-          See what our customers love about our products. Discover how we excel in
-          efficiency, durability, and satisfaction. Join us for quality, innovation,
-          and reliable support.
+          Platformadagi top kurlar haqida batafsil ma'lumot
         </Typography>
       </Box>
       <Grid container spacing={2}>
-        {userTestimonials.map((testimonial, index) => (
+        {courseData.map((testimonial, index) => (
           <Grid item xs={12} sm={6} md={4} key={index} sx={{ display: 'flex' }}>
-            <Card
-              sx={{
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'space-between',
-                flexGrow: 1,
-                p: 1,
-              }}
-            >
-              <CardContent>
-                <Typography variant="body2" color="text.secondary">
-                  {testimonial.testimonial}
-                </Typography>
-              </CardContent>
-              <Box
+            <Link href="">
+              <Card
                 sx={{
                   display: 'flex',
-                  flexDirection: 'row',
+                  flexDirection: 'column',
                   justifyContent: 'space-between',
-                  pr: 2,
+                  flexGrow: 1,
+                  p: 1,
                 }}
               >
-                <CardHeader
-                  avatar={testimonial.avatar}
-                  title={testimonial.name}
-                  subheader={testimonial.occupation}
+                <CardMedia
+                  sx={{ height: 200, borderRadius: '10px' }}
+                  image={logos[index]}
+                  title={`Logo ${index + 1}`}
+
                 />
-                <img
-                  src={logos[index]}
-                  alt={`Logo ${index + 1}`}
-                  style={logoStyle}
-                />
-              </Box>
-            </Card>
+
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    {testimonial.title}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {testimonial.testimonial}
+                  </Typography>
+                </CardContent>
+                <Box
+                  sx={{
+                    display: 'flex',
+                    flexDirection: 'row',
+                    justifyContent: 'space-between',
+                    pr: 2,
+                  }}
+                >
+                  <CardHeader
+                    avatar={testimonial.avatar}
+                    title={testimonial.name}
+                    subheader={testimonial.occupation}
+                  />
+                </Box>
+              </Card>
+            </Link>
           </Grid>
         ))}
+        <Grid item xs={12} sm={12} md={12} mt={3} display={'flex'} justifyContent={'center'} alignItems={'center'}>
+          <Button>Ko'proq</Button>
+        </Grid>
       </Grid>
     </Container>
   );

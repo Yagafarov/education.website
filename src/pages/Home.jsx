@@ -11,13 +11,13 @@ import AutoAwesomeRoundedIcon from '@mui/icons-material/AutoAwesomeRounded';
 import AppAppBar from '../components/AppAppbar';
 import Hero from '../components/Hero';
 import LogoCollection from '../components/LogoCollection';
-import Highlights from '../components/Highlights';
-import Pricing from '../components/Pricing';
+import Blogs from '../components/Blogs';
 import About from '../components/About'
 import Courses from '../components/Courses';
 import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 import getLPTheme from './getPTheme';
+import Teachers from '../components/Teachers';
 
 const defaultTheme = createTheme({});
 
@@ -87,9 +87,9 @@ export default function Home() {
         <Divider />
         <Courses />
         <Divider />
-        <Highlights />
+        <Blogs />
         <Divider />
-        <Pricing />
+        <Teachers />
         <Divider />
         <FAQ />
         <Divider />

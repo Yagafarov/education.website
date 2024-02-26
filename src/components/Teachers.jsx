@@ -10,54 +10,39 @@ import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
-import CheckCircleRoundedIcon from '@mui/icons-material/CheckCircleRounded';
 
 const tiers = [
   {
-    title: 'Free',
+    title: 'Ahror B',
     price: '0',
-    description: [
-      '10 users included',
-      '2 GB of storage',
-      'Help center access',
-      'Email support',
-    ],
-    buttonText: 'Sign up for free',
+    imageUrl:'https://png.pngtree.com/png-vector/20230918/ourmid/pngtree-man-in-shirt-smiles-and-gives-thumbs-up-to-show-approval-png-image_10094392.png',
+    description: "Frontend bo'yicha 4 yillik tajribaga ega bo'lgan ko'p yillik dasturchi haqida",
+    buttonText: 'Kurslar',
     buttonVariant: 'outlined',
   },
   {
-    title: 'Professional',
+    title: 'Axrorov Azizbek',
     subheader: 'Recommended',
     price: '15',
-    description: [
-      '20 users included',
-      '10 GB of storage',
-      'Help center access',
-      'Priority email support',
-      'Dedicated team',
-      'Best deals',
-    ],
-    buttonText: 'Start now',
+    imageUrl:'https://png.pngtree.com/png-vector/20230918/ourmid/pngtree-man-in-shirt-smiles-and-gives-thumbs-up-to-show-approval-png-image_10094381.png',
+    description: "Sun'iy intellekt va mashinani o'qitishga oid ko'p yillik tajribaga ega shaxs",
+    buttonText: 'Hoziroq kursni boshlash',
     buttonVariant: 'contained',
   },
   {
-    title: 'Enterprise',
-    price: '30',
-    description: [
-      '50 users included',
-      '30 GB of storage',
-      'Help center access',
-      'Phone & email support',
-    ],
-    buttonText: 'Contact us',
+    title: 'Ahror B',
+    price: '0',
+    imageUrl:'https://png.pngtree.com/png-vector/20230918/ourmid/pngtree-man-in-shirt-smiles-and-gives-thumbs-up-to-show-approval-png-image_10094392.png',
+    description: "Frontend bo'yicha 4 yillik tajribaga ega bo'lgan ko'p yillik dasturchi haqida",
+    buttonText: 'Kurslar',
     buttonVariant: 'outlined',
   },
 ];
 
-export default function Pricing() {
+export default function Teachers() {
   return (
     <Container
-      id="pricing"
+      id="teachers"
       sx={{
         pt: { xs: 4, sm: 12 },
         pb: { xs: 8, sm: 16 },
@@ -75,13 +60,11 @@ export default function Pricing() {
         }}
       >
         <Typography component="h2" variant="h4" color="text.primary">
-          Pricing
+          Tajribali ustozlarimiz
         </Typography>
         <Typography variant="body1" color="text.secondary">
-          Quickly build an effective pricing table for your potential customers with
-          this layout. <br />
-          It&apos;s built with default Material UI components with little
-          customization.
+          Bizning platformada ko'p yillik tajribaga ega mohir ustozlar mavjud. <br />
+          Ularning ko'p yillik tajribasiga ega bo'lish uchun kurslarimziga a'zo bo'lishingiz kerak  
         </Typography>
       </Box>
       <Grid container spacing={3} alignItems="center" justifyContent="center">
@@ -90,7 +73,7 @@ export default function Pricing() {
             item
             key={tier.title}
             xs={12}
-            sm={tier.title === 'Enterprise' ? 12 : 6}
+            sm={tier.subheader !== 'Recommended' ? 12 : 6}
             md={4}
           >
             <Card
@@ -99,11 +82,11 @@ export default function Pricing() {
                 display: 'flex',
                 flexDirection: 'column',
                 gap: 4,
-                border: tier.title === 'Professional' ? '1px solid' : undefined,
+                border: tier.subheader === 'Recommended' ? '1px solid' : undefined,
                 borderColor:
-                  tier.title === 'Professional' ? 'primary.main' : undefined,
+                  tier.subheader === 'Recommended' ? 'primary.main' : undefined,
                 background:
-                  tier.title === 'Professional'
+                  tier.subheader === 'Recommended'
                     ? 'linear-gradient(#033363, #021F3B)'
                     : undefined,
               }}
@@ -116,15 +99,16 @@ export default function Pricing() {
                     justifyContent: 'space-between',
                     alignItems: 'center',
                     color:
-                      tier.title === 'Professional' ? 'primary.contrastText' : '',
+                      tier.subheader === 'Recommended' ? 'primary.contrastText' : '',
                   }}
                 >
                   <Typography component="h3" variant="h6">
                     {tier.title}
                   </Typography>
-                  {tier.title === 'Professional' && (
+                  {tier.subheader === 'Recommended' && (
                     <Chip
                       icon={<AutoAwesomeIcon />}
+                      style={{cursor:'pointer'}}
                       label={tier.subheader}
                       size="small"
                       sx={{
@@ -144,67 +128,43 @@ export default function Pricing() {
                 <Box
                   sx={{
                     display: 'flex',
-                    alignItems: 'baseline',
+                    alignItems: 'center',
                     color:
-                      tier.title === 'Professional'
+                      tier.subheader === 'Recommended'
                         ? 'primary.contrastText'
                         : undefined,
                   }}
                 >
-                  <Typography component="h3" variant="h2">
-                    ${tier.price}
-                  </Typography>
-                  <Typography component="h3" variant="h6">
-                    &nbsp; per month
-                  </Typography>
+                  <img src={tier.imageUrl} style={{width:'100%'}} />
                 </Box>
                 <Divider
                   sx={{
-                    my: 2,
+                    my: 1,
                     opacity: 0.2,
                     borderColor: 'grey.500',
                   }}
                 />
-                {tier.description.map((line) => (
-                  <Box
-                    key={line}
-                    sx={{
-                      py: 1,
-                      display: 'flex',
-                      gap: 1.5,
-                      alignItems: 'center',
-                    }}
-                  >
-                    <CheckCircleRoundedIcon
-                      sx={{
-                        width: 20,
-                        color:
-                          tier.title === 'Professional'
-                            ? 'primary.light'
-                            : 'primary.main',
-                      }}
-                    />
+                {
                     <Typography
                       component="text"
                       variant="subtitle2"
                       sx={{
                         color:
-                          tier.title === 'Professional'
+                          tier.subheader === 'Recommended'
                             ? 'primary.contrastText'
                             : undefined,
                       }}
                     >
-                      {line}
+                      {tier.description}
                     </Typography>
-                  </Box>
-                ))}
+                }
               </CardContent>
               <CardActions>
                 <Button
                   fullWidth
                   variant={tier.buttonVariant}
                   component="a"
-                  href="/material-ui/getting-started/templates/checkout/"
+                  href="#"
                   target="_blank"
                 >
                   {tier.buttonText}

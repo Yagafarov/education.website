@@ -38,7 +38,7 @@ export default function FAQ() {
           textAlign: { sm: 'left', md: 'center' },
         }}
       >
-        Frequently asked questions
+        Ko'p beriladigan savollar
       </Typography>
       <Box sx={{ width: '100%' }}>
         <Accordion
@@ -51,7 +51,7 @@ export default function FAQ() {
             id="panel1d-header"
           >
             <Typography component="h3" variant="subtitle2">
-              How do I contact customer support if I have a question or issue?
+            Veb-saytingizda qanday IT kurslar mavjud?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
@@ -60,10 +60,7 @@ export default function FAQ() {
               gutterBottom
               sx={{ maxWidth: { sm: '100%', md: '70%' } }}
             >
-              You can reach our customer support team by emailing
-              <Link> support@email.com </Link>
-              or calling our toll-free number. We&apos;re here to assist you
-              promptly.
+              Bizning veb-saytimizda IT sohasiga oid turli turdagi kurslar mavjud, masalan, dasturlash, tarmoq inzheneriyasi, kiber-xavfsizlik va boshqalar. Kurslarimizni ko'rish uchun "Kurslar" bo'limini tekshiring.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -77,7 +74,7 @@ export default function FAQ() {
             id="panel2d-header"
           >
             <Typography component="h3" variant="subtitle2">
-              Can I return the product if it doesn&apos;t meet my expectations?
+            Qanday qilib IT kurslariga yozilishni boshlash mumkin?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
@@ -86,9 +83,7 @@ export default function FAQ() {
               gutterBottom
               sx={{ maxWidth: { sm: '100%', md: '70%' } }}
             >
-              Absolutely! We offer a hassle-free return policy. If you&apos;re not
-              completely satisfied, you can return the product within [number of
-              days] days for a full refund or exchange.
+              IT kurslarimizga yozilish juda oson. Sizga kerakli kursni tanlang, onlayn ro'yxatdan o'ting va to'lovni amalga oshiring. Darslarga o'z vaqtingizda kirishingiz mumkin.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -102,7 +97,7 @@ export default function FAQ() {
             id="panel3d-header"
           >
             <Typography component="h3" variant="subtitle2">
-              What makes your product stand out from others in the market?
+            Kurslar necha muddat davom etadi?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
@@ -111,9 +106,7 @@ export default function FAQ() {
               gutterBottom
               sx={{ maxWidth: { sm: '100%', md: '70%' } }}
             >
-              Our product distinguishes itself through its adaptability, durability,
-              and innovative features. We prioritize user satisfaction and
-              continually strive to exceed expectations in every aspect.
+              IT kurslarimizning davomiyligi ularning mavzusiga va tuzilishiga bog'liqdir. Ba'zilari bir necha hafta davom etadi, ba'zilari esa bir necha oy vaqt olishi mumkin. Har bir kursning davomiyligi va o'z vaqt chegarasiga ega bo'lgan natijalari haqiqiy natijalar olish uchun moslashadi.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -127,7 +120,7 @@ export default function FAQ() {
             id="panel4d-header"
           >
             <Typography component="h3" variant="subtitle2">
-              Is there a warranty on the product, and what does it cover?
+            IT kurslariga qanday qilib qo'shilish mumkin?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
@@ -136,10 +129,7 @@ export default function FAQ() {
               gutterBottom
               sx={{ maxWidth: { sm: '100%', md: '70%' } }}
             >
-              Yes, our product comes with a [length of warranty] warranty. It covers
-              defects in materials and workmanship. If you encounter any issues
-              covered by the warranty, please contact our customer support for
-              assistance.
+              Kurslarga qo'shilish oson. Siz veb-saytimizda tanlangan kursni tanlang, ro'yxatdan o'ting va to'lovni amalga oshiring. Keyingi qadamda, darslar uchun yo'l yo'riqnoma olishingiz mumkin.
             </Typography>
           </AccordionDetails>
         </Accordion>
