@@ -45,7 +45,7 @@ export default function Hero() {
               textAlign: 'center',
             }}
           >
-            Bilim bu -&nbsp;
+            IT olamiga -&nbsp;
             <Typography
               component="span"
               variant="h1"
@@ -54,7 +54,7 @@ export default function Hero() {
                   theme.palette.mode === 'light' ? 'primary.main' : 'primary.light',
               }}
             >
-               muvaffaqiyat
+               sayohat
             </Typography>
           </Typography>
           <Typography variant="body1" textAlign="center" color="text.secondary">
