@@ -199,17 +199,27 @@ function AppAppBar({ mode, toggleColorMode }) {
                   >
                     <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} />
                   </Box>
-                  <MenuItem onClick={() => scrollToSection('features')}>
-                    Features
+                  <MenuItem onClick={() => scrollToSection('hero')}>
+                    Bosh sahifa
                   </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('testimonials')}>
-                    Testimonials
+                  <MenuItem onClick={() => scrollToSection('about')}>
+                    Afzalliklar
                   </MenuItem>
                   <MenuItem onClick={() => scrollToSection('highlights')}>
                     Highlights
                   </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('pricing')}>
-                    Pricing
+                  <MenuItem onClick={() => scrollToSection('courses')}>
+                    Kurslar
+                  </MenuItem>
+                  <MenuItem onClick={() => scrollToSection('blogs')}>
+                    Bloglar
+                  </MenuItem>
+                  
+                  <MenuItem onClick={() => scrollToSection('teachers')}>
+                    O'qituvchilar
+                  </MenuItem>
+                  <MenuItem onClick={() => scrollToSection('faq')}>
+                    FAQ
                   </MenuItem>
                   <MenuItem onClick={() => scrollToSection('faq')}>FAQ</MenuItem>
                   <Divider />
@@ -218,11 +228,11 @@ function AppAppBar({ mode, toggleColorMode }) {
                       color="primary"
                       variant="contained"
                       component="a"
-                      href="/material-ui/getting-started/templates/sign-up/"
+                      href="/signup"
                       target="_blank"
                       sx={{ width: '100%' }}
                     >
-                      Sign up
+                      Ro'yxatdan o'tish
                     </Button>
                   </MenuItem>
                   <MenuItem>
@@ -230,11 +240,11 @@ function AppAppBar({ mode, toggleColorMode }) {
                       color="primary"
                       variant="outlined"
                       component="a"
-                      href="/material-ui/getting-started/templates/sign-in/"
+                      href="/signin"
                       target="_blank"
                       sx={{ width: '100%' }}
                     >
-                      Sign in
+                      Kirish
                     </Button>
                   </MenuItem>
                 </Box>
