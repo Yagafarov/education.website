@@ -45,7 +45,7 @@ export default function Hero() {
               textAlign: 'center',
             }}
           >
-            IT olamiga -&nbsp;
+            IT olamiga&nbsp;
             <Typography
               component="span"
               variant="h1"
