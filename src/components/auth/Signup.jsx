@@ -50,7 +50,7 @@ export default function Signup() {
                     sm={4}
                     md={7}
                     sx={{
-                        backgroundImage: 'url(https://source.unsplash.com/random?wallpapers)',
+                        backgroundImage: 'url(https://img.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?w=826&t=st=1709017170~exp=1709017770~hmac=3eea3b5b54d314a9221f0f245c54f5e64da57e5e7c56deb68a940473f39a0399)',
                         backgroundRepeat: 'no-repeat',
                         backgroundColor: (t) =>
                             t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
