@@ -174,7 +174,7 @@ const getDesignTokens = (mode) => ({
     },
     caption: {
       fontWeight: 400,
-      fontSize: 12,
+      fontSize: 14,
     },
   },
 });
