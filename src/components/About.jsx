@@ -131,6 +131,7 @@ export default function About() {
                   '& > svg': { transition: '0.2s' },
                   '&:hover > svg': { transform: 'translateX(2px)' },
                 }}
+                
               >
                 <span>Batafsil</span>
                 <ChevronRightRoundedIcon
