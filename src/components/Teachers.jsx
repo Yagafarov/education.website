@@ -109,7 +109,7 @@ export default function Teachers() {
                     <Chip
                       icon={<AutoAwesomeIcon />}
                       style={{cursor:'pointer'}}
-                      label={tier.subheader}
+                      label={"Best Teacher"}
                       size="small"
                       sx={{
                         background: (theme) =>

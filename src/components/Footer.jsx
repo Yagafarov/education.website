@@ -13,6 +13,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/X';
 
 import MainLogo from '../assets/MainLogo.svg'
+import { Instagram, Telegram } from '@mui/icons-material';
 const logoStyle = {
   width: '120px',
   height: 'auto',
@@ -58,11 +59,11 @@ export default function Footer() {
           }}
         >
           <Box sx={{ width: { xs: '100%', sm: '60%' } }}>
-            <Box sx={{ ml: '-15px' }}>
+            <Box sx={{ ml: '-5px' }}>
               <img
                 src={MainLogo}
                 style={logoStyle}
-                alt="logo of sitemark"
+                alt="logo of Eduadd"
               />
             </Box>
             <Typography variant="body2" fontWeight={600} gutterBottom>
@@ -191,25 +192,28 @@ export default function Footer() {
             color="inherit"
             href="https://github.com/yagafarov"
             aria-label="GitHub"
+            target='_blank'
             sx={{ alignSelf: 'center' }}
           >
             <FacebookIcon />
           </IconButton>
           <IconButton
             color="inherit"
-            href="https://twitter.com/"
-            aria-label="X"
+            href="https://t.me/yagafarovd"
+            aria-label="Telegram"
+            target='_blank'
             sx={{ alignSelf: 'center' }}
           >
-            <TwitterIcon />
+            <Telegram />
           </IconButton>
           <IconButton
             color="inherit"
-            href="https://www.linkedin.com/"
-            aria-label="LinkedIn"
+            href="https://www.instagram.com/"
+            aria-label="INstagram"
+            target='_blank'
             sx={{ alignSelf: 'center' }}
           >
-            <LinkedInIcon />
+            <Instagram />
           </IconButton>
         </Stack>
       </Box>

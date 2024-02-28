@@ -22,7 +22,7 @@ const defaultTheme = createTheme({});
 
 
 export default function Home() {
-  const [mode, setMode] = React.useState('dark');
+  const [mode, setMode] = React.useState('light');
   const [showCustomTheme, setShowCustomTheme] = React.useState(true);
   const LPtheme = createTheme(getLPTheme(mode));
 

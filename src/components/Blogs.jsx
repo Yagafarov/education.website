@@ -8,7 +8,7 @@ import FeaturedPost from './FeaturedPost';
 
 const featuredPosts = [
   {
-    title:"Sun'iy intellekt rivojlanmoqda",
+    title: "Sun'iy intellekt rivojlanmoqda",
     date: 'Nov 12',
     description:
       'Tez orada tarjimonlar o`z ishini yoqitishlari mumkin',
@@ -32,8 +32,6 @@ export default function Blogs() {
       sx={{
         pt: { xs: 4, sm: 12 },
         pb: { xs: 8, sm: 16 },
-        color: 'white',
-        bgcolor: '#06090a',
       }}
     >
       <Container
@@ -59,9 +57,9 @@ export default function Blogs() {
           </Typography>
         </Box>
 
-        <Grid container spacing={2.5} alignItems={'center'}>
+        <Grid container spacing={2.5} alignItems={'center'} >
           {featuredPosts.map((post, index) => (
-            <Grid item xs={12} sm={6} md={12} key={index} style={{ display: 'flex', justifyContent: 'center' }}>
+            <Grid item xs={12} sm={6} md={6} key={index} style={{ display: 'flex', justifyContent: 'center' }}>
               <FeaturedPost key={post.title} post={post} />
             </Grid>
           ))}
