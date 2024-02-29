@@ -87,7 +87,7 @@ export default function Hero() {
           <Typography variant="caption" textAlign="center" sx={{ opacity: 0.8 }}>
             &quot;Hozir boshlash&quot; tugmasini bosish orqali siz bizning&nbsp;
             
-            <Link href="#" color="primary">
+            <Link href="https://docs.google.com/document/d/1M7d_1gsr8tgiwwja72e-G6x1nUahkIyJ/edit#heading=h.8ihriev6yp3u" color="primary">
               Foydalanish shartlari
             </Link>
             ga rozilik biltirasiz.

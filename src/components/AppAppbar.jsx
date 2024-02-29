@@ -14,6 +14,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ToggleColorMode from './ToggleColorMode';
 
 import MainLogo from '../assets/MainLogo.svg'
+import { Link } from '@mui/material';
 
 const logoStyle = {
   width: '120px',
@@ -86,11 +87,13 @@ function AppAppBar({ mode, toggleColorMode }) {
                 px: 0,
               }}
             >
+              <Link href="/" underline='none'>
               <img
                 src={MainLogo}
                 style={logoStyle}
                 alt="logo of EduAdd"
               />
+              </Link>
               <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                 <MenuItem
                   onClick={() => scrollToSection('hero')}

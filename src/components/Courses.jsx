@@ -167,7 +167,7 @@ export default function Courses() {
           </Grid>
         ))}
         <Grid item xs={12} sm={12} md={12} mt={3} display={'flex'} justifyContent={'center'} alignItems={'center'}>
-          <Button target='_blank' href='https://docs.google.com/document/d/1M7d_1gsr8tgiwwja72e-G6x1nUahkIyJ/edit?usp=sharing&ouid=105774077431267688121&rtpof=true&sd=true' >Ko'proq</Button>
+          <Button target='_blank' href='/course' >Ko'proq</Button>
         </Grid>
       </Grid>
     </Container>

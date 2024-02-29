@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-import { Button } from '@mui/material';
+import { Button, Link } from '@mui/material';
 import FeaturedPost from './FeaturedPost';
 
 const featuredPosts = [
@@ -64,7 +64,9 @@ export default function Blogs() {
             </Grid>
           ))}
           <Grid item xs={12} sm={12} md={12} mt={3} display={'flex'} justifyContent={'center'} alignItems={'center'}>
-            <Button>Ko'proq</Button>
+            <Button>
+              <Link href="/blog" target="_blank" >Ko'proq</Link>
+            </Button>
           </Grid>
         </Grid>
       </Container>

@@ -7,6 +7,8 @@ import Signup from './components/auth/Signup'
 
 import { Route, Routes } from 'react-router-dom'
 import NotFound from './pages/pageNotFound'
+import Course from './pages/Course'
+import Blog from './pages/Blog'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -14,6 +16,8 @@ function App() {
     <>
     <Routes>
       <Route path='/' element={<Home/>} />
+      <Route path='/course' element={<Course/>}/>
+      <Route path='/blog' element={<Blog/>}/>
       <Route path='/signin' element={<Signin/>}/>
       <Route path='/signup' element={<Signup/>}/>
       <Route path='*' element={<NotFound/>} />
