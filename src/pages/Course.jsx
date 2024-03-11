@@ -9,6 +9,8 @@ import Courses from '../components/Courses';
 import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 import getLPTheme from './getPTheme';
+import { Button, Container } from '@mui/material';
+import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 
 const defaultTheme = createTheme({});
 
@@ -30,9 +32,14 @@ export default function Course() {
   return (
     <ThemeProvider theme={showCustomTheme ? LPtheme : defaultTheme}>
       <CssBaseline />
-      <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
+      
       <Box sx={{ bgcolor: 'background.default' }}>
+      <Container maxWidth="lg">
+      <Box textAlign={'right'} mt={2}>
+       <Button href='/'><KeyboardBackspaceIcon/> Bosh sahifaga qaytish</Button>
+      </Box>
 
+      </Container>
         <Courses />
         <Divider />
         <FAQ />
@@ -42,3 +49,6 @@ export default function Course() {
     </ThemeProvider>
   );
 }
+
+
+// https://github.com/codedthemes/mantis-free-react-admin-template
