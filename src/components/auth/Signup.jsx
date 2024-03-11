@@ -12,8 +12,8 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { InputAdornment } from '@mui/material';
-import { ArrowBack, VisibilityOff } from '@mui/icons-material';
+import { IconButton, InputAdornment } from '@mui/material';
+import {VisibilityOff,Visibility } from '@mui/icons-material';
 
 function Copyright(props) {
     return (
@@ -34,13 +34,9 @@ const defaultTheme = createTheme();
 
 export default function SignUp() {
     const [showPassword, setShowPassword] = React.useState(false);
-
-    const handleClickShowPassword = () => setShowPassword((show) => !show);
-  
-    const handleMouseDownPassword = (event) => {
-      event.preventDefault();
-    };
-
+    const handleClickShowPassword = () => {
+        setShowPassword(!showPassword);
+      };
     const handleSubmit = (event) => {
         event.preventDefault();
         const data = new FormData(event.currentTarget);
@@ -58,7 +54,7 @@ export default function SignUp() {
                 <CssBaseline />
                 <Box
                     sx={{
-                        marginTop:6 ,
+                        marginTop:16 ,
                         display: 'flex',
                         flexDirection: 'column',
                         alignItems: 'center',
@@ -109,15 +105,21 @@ export default function SignUp() {
                                     fullWidth
                                     name="password"
                                     label="Parol"
-                                    type="password"
+                                    type={showPassword ? "text" : "password"}
                                     id="password"
                                     autoComplete="new-password"
                                     InputProps={{
-                                        startAdornment: (
+                                        endAdornment: (
                                           <InputAdornment position="end">
-                                            <VisibilityOff />
+                                            <IconButton
+                                            aria-label="toggle password visibility"
+                                            onClick={handleClickShowPassword}
+                                            edge="end"
+                                            >
+                                            {showPassword ? <Visibility /> : <VisibilityOff />}
+                                            </IconButton>
                                           </InputAdornment>
-                                        ),
+                                        )
                                       }}
                                 />
                             </Grid>

@@ -11,7 +11,11 @@ import Box from '@mui/material/Box';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
+import Divider from '@mui/material/Divider';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+import { VisibilityOff, Visibility } from '@mui/icons-material';
+import { IconButton, InputAdornment } from '@mui/material';
 
 function Copyright(props) {
   return (
@@ -31,6 +35,12 @@ function Copyright(props) {
 const defaultTheme = createTheme();
 
 export default function SignIn() {
+
+  const [showPassword, setShowPassword] = React.useState(false);
+  const handleClickShowPassword = () => {
+    setShowPassword(!showPassword);
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -42,11 +52,11 @@ export default function SignIn() {
 
   return (
     <ThemeProvider theme={defaultTheme}>
-      <Container component="main" maxWidth="xs" style={{maxHeight:'100vh'}}>
+      <Container component="main" maxWidth="xs" style={{ maxHeight: '100vh' }}>
         <CssBaseline />
         <Box
           sx={{
-            marginTop: 8,
+            marginTop: 16,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
@@ -59,30 +69,50 @@ export default function SignIn() {
             Tizimga kirish
           </Typography>
           <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
-            <TextField
-              margin="normal"
-              required
-              fullWidth
-              id="email"
-              label="Email"
-              name="email"
-              autoComplete="email"
-              autoFocus
-            />
-            <TextField
-              margin="normal"
-              required
-              fullWidth
-              name="password"
-              label="Parol"
-              type="password"
-              id="password"
-              autoComplete="current-password"
-            />
-            <FormControlLabel
-              control={<Checkbox value="remember" color="primary" />}
-              label="Yodda saqlash"
-            />
+            <Grid container spacing={2}>
+              <Grid item xs={12}>
+                <TextField
+                  margin="normal"
+                  required
+                  fullWidth
+                  id="email"
+                  label="Email"
+                  name="email"
+                  autoComplete="email"
+                  autoFocus
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <TextField
+                  required
+                  fullWidth
+                  name="password"
+                  label="Parol"
+                  type={showPassword ? "text" : "password"}
+                  id="password"
+                  autoComplete="new-password"
+                  InputProps={{
+                    endAdornment: (
+                      <InputAdornment position="end">
+                        <IconButton
+                          aria-label="toggle password visibility"
+                          onClick={handleClickShowPassword}
+                          edge="end"
+                        >
+                          {showPassword ? <Visibility /> : <VisibilityOff />}
+                        </IconButton>
+                      </InputAdornment>
+                    )
+                  }}
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <FormControlLabel
+                  control={<Checkbox value="remember" color="primary" />}
+                  label="Yodda saqlash"
+                />
+              </Grid>
+            </Grid>
             <Button
               type="submit"
               fullWidth
@@ -103,11 +133,13 @@ export default function SignIn() {
                   {"Hisobingiz yo'qmi? Hisob yaratish"}
                 </Link>
               </Grid>
+              <Button>google orqali</Button>
+              <Divider />
             </Grid>
           </Box>
         </Box>
         <Copyright sx={{ mt: 5, mb: 2 }} />
       </Container>
-    </ThemeProvider>
+    </ThemeProvider >
   );
 }
