@@ -14,7 +14,7 @@ import Container from '@mui/material/Container';
 import Divider from '@mui/material/Divider';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
-import { VisibilityOff, Visibility } from '@mui/icons-material';
+import { VisibilityOff, Visibility, Google } from '@mui/icons-material';
 import { IconButton, InputAdornment } from '@mui/material';
 
 function Copyright(props) {
@@ -133,8 +133,13 @@ export default function SignIn() {
                   {"Hisobingiz yo'qmi? Hisob yaratish"}
                 </Link>
               </Grid>
-              <Button>google orqali</Button>
-              <Divider />
+              <Grid item textAlign={'center'} width={'100%'} mt={3} >
+                <Divider />
+                <Box mt={3}>
+                  <Button startIcon={<Google />} variant="contained">google</Button>
+
+                </Box>
+              </Grid>
             </Grid>
           </Box>
         </Box>

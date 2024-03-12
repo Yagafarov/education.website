@@ -12,8 +12,8 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { IconButton, InputAdornment } from '@mui/material';
-import {VisibilityOff,Visibility } from '@mui/icons-material';
+import { Divider, IconButton, InputAdornment } from '@mui/material';
+import {VisibilityOff,Visibility, Google } from '@mui/icons-material';
 
 function Copyright(props) {
     return (
@@ -144,6 +144,12 @@ export default function SignUp() {
                                 <Link href="/signin" variant="body2">
                                     Hisobingiz bormi? tizimga kirish
                                 </Link>
+                            </Grid>
+                            <Grid item textAlign={'center'} width={'100%'} mt={3} >
+                                      <Divider/>
+                                      <Box mt={3}>
+                                      <Button startIcon={<Google/>} variant='contained' >google</Button>
+                                      </Box>
                             </Grid>
                         </Grid>
                     </Box>
