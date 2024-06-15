@@ -13,30 +13,30 @@ import { Button, CardMedia, Link } from '@mui/material';
 const courseData = [
   {
     id: 1,
-    avatar: <Avatar alt="Aliyev Ali" src="https://variety.com/wp-content/uploads/2021/04/Avatar.jpg" />,
-    name: 'Aliyev Ali',
+    avatar: <Avatar alt="Aliyev Ali" src="#" />,
+    name: 'Dinmuhammad Yagafarov',
     title: "Data Science",
-    occupation: 'Senior Engineer',
+    occupation: "O'qituvchi",
     testimonial:
-      "I absolutely love how versatile this product is! Whether I'm tackling work projects or indulging in my favorite hobbies, it seamlessly adapts to my changing needs. Its intuitive design has truly enhanced my daily routine, making tasks more efficient and enjoyable.",
+      "Data Science onlayn kursi juda foydali va qiziqarli bo'ldi. O'zbek tilida o'qitilishi o'rganishni osonlashtirdi va amaliy mashg'ulotlar orqali ko'nikmalarimni mustahkamladim. Ushbu kursni har bir boshlovchi va mutaxassis bo'lishni istaganlarga tavsiya qilaman!",
   },
   {
     id: 2,
     avatar: <Avatar alt="Aliyev Ali" src="https://variety.com/wp-content/uploads/2021/04/Avatar.jpg" />,
     name: 'Aliyev Ali',
-    title: "Zamonaviy python",
+    title: "Zamonaviy Python",
     occupation: 'Lead Product Designer',
     testimonial:
-      "One of the standout features of this product is the exceptional customer support. In my experience, the team behind this product has been quick to respond and incredibly helpful. It's reassuring to know that they stand firmly behind their product.",
+      "Zamonaviy Python kursi menga juda ko'p yangi bilimlar berdi. Kursning amaliy mashg'ulotlari juda foydali bo'ldi va o'qituvchilarning yordami bilan murakkab tushunchalarni osonlik bilan o'zlashtirdim.",
   },
-  {
+  { 
     id: 3,
     avatar: <Avatar alt="Aliyev Ali" src="https://variety.com/wp-content/uploads/2021/04/Avatar.jpg" />,
     name: 'Aliyev Ali',
     title: "Python asoslari",
     occupation: 'CTO',
     testimonial:
-      'The level of simplicity and user-friendliness in this product has significantly simplified my life. I appreciate the creators for delivering a solution that not only meets but exceeds user expectations.',
+      "Python asoslari kursi oson va tushunarli tarzda o'rganishni ta'minladi. Kursning oddiyligi va foydalanuvchi uchun qulayligi hayotimni sezilarli darajada soddalashtirdi.",
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ const courseData = [
     title: "Sun'iy intellekt",
     occupation: 'Senior Engineer',
     testimonial:
-      "I appreciate the attention to detail in the design of this product. The small touches make a big difference, and it's evident that the creators focused on delivering a premium experience.",
+      "Sun'iy intellekt kursining dizayni va detallarga e'tibor berilganligi menga juda yoqdi. Kichik narsalar katta farq qiladi va kurs yaratuvchilari yuqori sifatli tajriba taqdim etishga e'tibor berishgan.",
   },
   {
     id: 5,
@@ -54,7 +54,7 @@ const courseData = [
     title: "Backend kursi",
     occupation: 'Backend dasturchi',
     testimonial:
-      "I've tried other similar products, but this one stands out for its innovative features. It's clear that the makers put a lot of thought into creating a solution that truly addresses user needs.",
+      "Backend kursi boshqa mahsulotlar orasida o'zining innovatsion xususiyatlari bilan ajralib turadi. Yaratuvchilar foydalanuvchi ehtiyojlarini chinakamiga qondiradigan yechim yaratishga katta e'tibor qaratishgani ko'rinib turibdi.",
   },
   {
     id: 6,
@@ -63,12 +63,13 @@ const courseData = [
     title: "SEO kursi",
     occupation: 'Programmer',
     testimonial:
-      "The quality of this product exceeded my expectations. It's durable, well-designed, and built to last. Definitely worth the investment!",
+      "SEO kursining sifati mening kutganimdan ham yuqori bo'ldi. U bardoshli, yaxshi dizaynlangan va uzoq muddatga mo'ljallangan. Bu kursni o'qish investitsiyaga arziydi!",
   },
 ];
 
+
 const whiteLogos = [
-  'https://d1csarkz8obe9u.cloudfront.net/posterpreviews/online-course-template-banner-for-facebook-design-9a58359ebb1f36cbf294432d077af73c_screen.jpg?ts=1586796101',
+  'https://i.ytimg.com/vi/YfO28Ihehbk/maxresdefault.jpg',
   'https://trisectinstitute.com/wp-content/uploads/2021/12/best-python-training.png',
   'https://i.ytimg.com/vi/rfscVS0vtbw/maxresdefault.jpg',
   'https://www.elegantthemes.com/blog/wp-content/uploads/2023/12/best-ai-courses-featured-img.jpg',
@@ -76,14 +77,7 @@ const whiteLogos = [
   'https://venngage-wordpress.s3.amazonaws.com/uploads/2021/05/Create-Online-Course-Blog-Header.png',
 ];
 
-const darkLogos = [
-  'https://d1csarkz8obe9u.cloudfront.net/posterpreviews/online-course-template-banner-for-facebook-design-9a58359ebb1f36cbf294432d077af73c_screen.jpg?ts=1586796101',
-  'https://trisectinstitute.com/wp-content/uploads/2021/12/best-python-training.png',
-  'https://i.ytimg.com/vi/rfscVS0vtbw/maxresdefault.jpg',
-  'https://www.elegantthemes.com/blog/wp-content/uploads/2023/12/best-ai-courses-featured-img.jpg',
-  'https://assets-global.website-files.com/613baa7ad4f394142e65cb73/6192df82a3ed61da2f44f38a_opengraph-06.jpg',
-  'https://venngage-wordpress.s3.amazonaws.com/uploads/2021/05/Create-Online-Course-Blog-Header.png',
-];
+const darkLogos = whiteLogos;
 
 const logoStyle = {
   width: '64px',
