@@ -1,6 +1,6 @@
 # Educationa
 
-![Logo](https://github.com/Yagafarov/education.website/blob/main/Group%205.jpg)
+![Logo](https://github.com/Yagafarov/education.website/blob/main/hero.jpg)
 ## Tashabbus
 [Demo](https://educationa.netlify.app/) va
 [Dizayn figma](https://www.figma.com/design/DMmmKOpiSpVJANKTgKnbho/Educationa?t=2Sq1bko50I1Ymgbt-1)
