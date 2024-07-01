@@ -24,7 +24,7 @@ Educationa - bu ta'limga oid onlayn resurslarga oson va qulay kirish imkonini be
 2. **Ishga tushirish**: Loyihani ishga tushirish uchun, avvalo zaruriy paketlarni o'rnating va keyin serverni ishga tushuring:
     ```bash
     npm install
-    npm start
+    npm run dev
     ```
 
 3. **Netlify bilan deploy qilish**: 
