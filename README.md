@@ -1,8 +1,8 @@
 # Educationa
 
-![Logo](https://educationa.netlify.app/logo.png)
+![Logo]('./Group 5.png')
 ## Tashabbus
-[Demo](https://educationa.netlify.app/)
+[Demo](https://educationa.netlify.app/) va
 [Dizayn figma](https://www.figma.com/design/DMmmKOpiSpVJANKTgKnbho/Educationa?t=2Sq1bko50I1Ymgbt-1)
 
 Educationa - bu ta'limga oid onlayn resurslarga oson va qulay kirish imkonini beruvchi sayt. Bizning maqsadimiz o'quvchilarga, o'qituvchilarga va ota-onalarga turli xil o'quv materiallari va resurslarni taqdim etishdir.
